@@ -1,0 +1,12 @@
+<div class="navigation">
+    <div class="logo">
+        <span class="logo"></span>
+    </div>
+
+    <ul class="list">
+        <li class="list-items" *ngFor="let item of navItems">
+            <a href={{item.link}} class="item">{{ item.label }}</a>
+        </li>
+        <span class="menu-icon"></span>
+    </ul>
+</div>
