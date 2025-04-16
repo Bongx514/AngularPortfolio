@@ -1,0 +1,27 @@
+<body class="experience-page">
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">{{pageTitle}}</h1>
+            <h2 class="page-description" #scrambleText></h2>
+
+            <div class="maincontent">
+                <H1 class="typewriter-text"></H1>
+
+                <div class="card-container">
+                    <div class="card" 
+                        *ngFor = "let card of cards"
+                        #cardRef
+                        (mousemove)="onHover($event, cardRef)"
+                        (mouseleave)="onLeave(cardRef)">
+
+                        <h3 class="card-title">{{card.title}}</h3>
+                        <h5 class="card-description">{{card.description}}</h5>
+                        <div class="card-button-container">
+                            <button>{{buttonCaption}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
