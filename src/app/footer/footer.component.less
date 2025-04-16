@@ -1,0 +1,59 @@
+@import url('../web/css/_variables.less');
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background: @navy-40;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+
+        li {
+            list-style: none;
+
+            a {
+                font-weight: @font-semibold;
+                text-decoration: none;
+                color: @white-40;
+
+                &:hover {
+                    color: @gold-40;
+                    margin: 0;
+                    transition: all 0.08s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 14px;
+        color: @white-100;
+    }
+}
+
+@media screen and (max-width: @mobile-lg) {
+    .footer {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 0;
+            padding: 0 16px;
+            margin-bottom: 20px;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+}
