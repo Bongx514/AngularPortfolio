@@ -29,6 +29,15 @@
                 text-transform: capitalize;
                 font-weight: @font-bold;
                 margin: 0 auto;
+
+                &::after {
+                    content: @rocket;
+                    position: relative;
+                    top: 2px;
+                    width: 14px;
+                    display: inline-block;
+                    margin-left: 4px;
+                }
             }
         }
     } 

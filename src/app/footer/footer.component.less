@@ -33,6 +33,39 @@
                 }
             }
         }
+
+        .facebook,
+        .twitter,
+        .instagram,
+        .linkedin,
+        .github {
+            a{
+                &::before {
+                    position: relative;
+                    top: 2px;
+                    width: 12px;
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .facebook a::before {
+            content: @facebook;
+        }
+        .twitter a::before {
+            content: @twitter;
+        }
+        .instagram a::before {
+            content: @instagram;
+        }
+        .linkedin a::before {
+            content: @linkedin;
+        }
+        .github a::before {
+            content: @github;
+        }
+
     }
 
     .copyright {
