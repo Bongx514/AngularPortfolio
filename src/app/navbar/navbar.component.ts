@@ -14,4 +14,14 @@ export class NavbarComponent {
     { label: 'Experience', link: '/experience' },
     { label: 'Projects', link: '/projects' }
   ];
+
+  toggleMenu(): void {
+    const menu = document.querySelector('.mobile-nav') as HTMLElement,
+          menuicon = document.querySelector('.menu-icon') as HTMLElement;
+    if (menu) {
+      menu.classList.toggle('open');
+      menuicon.classList.toggle('menu-close');
+      console.log('Menu toggled!');
+    }
+  }
 }

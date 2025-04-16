@@ -50,6 +50,47 @@
     }
 }
 
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav.open {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background-color: @navy-40;
+    z-index: 2;
+
+    .list {
+        padding: 0 24px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: right;
+        list-style: none;
+
+        .list-items {
+            padding: 8px 0;
+            width: 100%;
+            text-align: center;
+
+            .item {
+                font-weight: @font-bold;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background: @gold-60;
+                color: @white-100;
+                cursor: pointer;
+                margin: 0;
+                transition: all 0.08s ease-in-out;
+            }
+        }
+    }
+}
 
 //
 // mobile 
