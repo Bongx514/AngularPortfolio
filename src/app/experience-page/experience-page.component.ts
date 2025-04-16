@@ -20,7 +20,7 @@ export class ExperiencePageComponent implements AfterViewInit {
   phrases = [
     'Welcome to my experience in software development.',
     'Creating beautiful user interfaces working for various companies.',
-    'Delivering smooth web apps.'
+    'Delivering smooth web application for your needs.'
   ];
 
   characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()';
