@@ -16,6 +16,10 @@ h2 {
     font-weight: @font-semibold;
 }
 
+h3, h4, h5, h6 {
+    color: @white-100;
+}
+
 a {
     color: @white-100;
     font-weight: @font-thin;
@@ -30,6 +34,35 @@ button {
     cursor: pointer;
     border-radius: 5px;
     max-width: 200px;
+
+    &:hover {
+        background-color: @blue-80;
+        color: @gold-40;
+        cursor: pointer;
+        transition: .5 smooth;
+    }
+}
+
+.card {
+    background: rgba(0, 31, 63, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 42px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: @font-bold;
+    color: @white-100;
+}
+
+.page-description {
+    font-size: 16px;
+    font-weight: @font-bold;
+    color: @white-100;
 }
 
 .open {

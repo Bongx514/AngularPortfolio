@@ -12,7 +12,7 @@ gsap.registerPlugin(TextPlugin);
   styleUrl: './home-page.component.less'
 })
 export class HomePageComponent {
-   pageTitle = 'Home Page';
+   pageTitle = 'Frontend Developer';
    pageDescription = 'Welcome to the home page of our Angular application!'+
    'Here you can find various features and information about our app.';
 

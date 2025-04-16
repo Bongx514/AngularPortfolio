@@ -1,0 +1,50 @@
+@import url('../web/css/_variables.less');
+
+.section {
+    background-image: url('../web/images/home-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        padding: 100px 0 0 0;
+
+        .maincontent {
+            margin-top: 32px;
+
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+
+                .card {
+                    max-width: 300px;
+                    
+                    .card-button-container {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: @mobile-lg) {
+    .section{
+        overflow: hidden;
+        overflow-y: scroll;
+
+        .container {
+            width: 86%;
+            margin-bottom: 32px;
+        }
+    }
+
+}
