@@ -6,10 +6,113 @@
     background-position: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
 
     .container {
         width: 60%;
         margin: 0 auto;
         padding: 100px 0 0 0;
+
+        .maincontent {
+            margin-bottom: 100px;
+            .page-wrapper {
+               .card-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for floating objects
+.card {
+    transition: transform 0.3s ease;
+    opacity: 1;
+  }
+  
+  /* Optional floaty items */
+  .floating-decor {
+    width: 40px;
+    height: 40px;
+    background-color: @navy-60;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .decor-1 {
+    top: 10%;
+    left: 5%;
+    z-index: 1000;
+  }
+  
+  .decor-2 {
+    bottom: 15%;
+    right: 10%;
+  }
+
+  .decor-3 {
+    bottom: 15%;
+    left: 10%;
+  }
+
+  .decor-4 {
+    top: 15%;
+    right: 10%;
+  }
+
+  .decor-5 {
+    bottom: 30%;
+    right: 20%;
+    z-index: 10;
+  }
+
+  .decor-6 {
+    top: 22%;
+    left: 50%;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+  }
+
+  //Typewriter blinker effect
+  .page-description::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }

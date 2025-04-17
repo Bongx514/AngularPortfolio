@@ -1,11 +1,37 @@
 <section class="section">
+    <div class="floating-decor decor-1"></div>
+    <div class="floating-decor decor-2"></div>
+    <div class="floating-decor decor-3"></div>
+    <div class="floating-decor decor-4"></div>
+    <div class="floating-decor decor-5"></div>
+    <div class="floating-decor decor-6"></div>
+
     <div class="container">
         <h1 class="page-title">{{pageTitle}}</h1>
-        <h2 class="page-description">{{pageDescription}}</h2>
+        <h2 class="page-description" id="page-description"></h2>
 
         <div class="maincontent">
             <div class="page-wrapper">
+                <div class="card-container">
+                    <div class="card" *ngFor="let item of educationItems">
+                        <div class="card-header">
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.year}}</p>
+                        </div>
+                        <div class="card-body">
+                            <p>{{item.institution}}</p>
+                        </div>
+                    </div>
+                </div>
                 
+                <div class="achievments-block">
+                    <H2>Acheivements</H2>
+                    <div class="card">
+                        <div class="card-image" style="width: 150px; height: 150px;"></div>
+                        <div class="card-header">Header here</div>
+                        <div class="card-body">body here</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
