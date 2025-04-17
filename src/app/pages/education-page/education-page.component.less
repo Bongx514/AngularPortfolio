@@ -20,6 +20,10 @@
         margin: 0 auto;
         padding: 100px 0 0 0;
 
+        h2 {
+            font-family: 'LCD', monospace;
+        }
+
         .maincontent {
             margin-bottom: 100px;
             .page-wrapper {
@@ -36,7 +40,14 @@
     }
 }
 
-
+@media screen and (max-width: @mobile-lg) {
+    .section {
+        height: 100vh;
+        .container {
+            width: 90%;
+        }
+    }
+}
 
 
 
