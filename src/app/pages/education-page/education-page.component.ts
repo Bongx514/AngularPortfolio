@@ -22,8 +22,8 @@ export class EducationPageComponent {
 
   educationItems = [
     { title: 'National Diploma: Software Development', institution: 'Tshwane University of Technology', year: 2023 },
-    { title: 'Matriculant', institution: 'Elizabeth Matsemela Sec School', year: 2015 },
     { title: 'Certified Kanban Systems Design', institution: 'Kanban Universty', year: 2022 },
+    { title: 'Matriculant', institution: 'Elizabeth Matsemela Sec School', year: 2015 },
   ];
 
   ngAfterViewInit(): void {
